@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-
+import { Link } from 'react-router-dom';
 
 export default function FormField() {
     const [formData, setFormData] = useState({
@@ -194,7 +194,7 @@ export default function FormField() {
                 <button type="submit">Aggiungi Articolo</button>
             </form>
 
-
+            <Link className="btn btn-primary" to='/posts'>Our posts</Link>
         </>
     )
 }
