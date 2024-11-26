@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 
 
@@ -39,9 +40,16 @@ export default function Posts() {
                                             <h3>
                                                 {post.title}
                                             </h3>
-                                            <img src={'http://localhost:3001/' + post.image} alt={post.title} />
+                                            <Link to={`/posts/${post.slug}`}>
+                                                <img src={'http://localhost:3001/' + post.image} alt={post.title} style={{ width: '100%', height: '10rem', aspectRatio: '1' }} />
+                                            </Link>
+
                                         </div>
-                                        {post.content}
+                                        <div className='border border-gray-400 p-2'>
+
+                                            {post.content}
+                                        </div>
+
                                     </div>
                                 )) :
                                 <p>No data found</p>

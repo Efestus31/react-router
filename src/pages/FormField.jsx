@@ -194,7 +194,7 @@ export default function FormField() {
                 <button type="submit">Aggiungi Articolo</button>
             </form>
 
-            <Link className="btn btn-primary" to='/posts'>Our posts</Link>
+            <Link className="btn btn-primary my-3" to='/posts'>Our posts</Link>
         </>
     )
 }
