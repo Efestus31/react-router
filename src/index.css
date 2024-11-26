@@ -20,7 +20,7 @@ header {
 }
 
 main {
-    height: calc(100vh - 200px);
+    height: calc(200vh - 200px);
 
     h1 {
         padding: 2rem;

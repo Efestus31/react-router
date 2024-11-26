@@ -103,60 +103,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/posts" element={<Posts />} />
             <Route path='/form' element={<FormField />} />
-
           </Route>
         </Routes>
-
-
-
-        <header>
-          <MainMenu />
-        </header>
-
-
-
-        <div className="container mt-4">
-
-
-
-          {/*   <div className="mt-5">
-            <h2>Articoli Inseriti:</h2>
-            <ul className="list-group">
-              {articoli.map((articolo, index) => (
-                <li key={index} className="list-group-item">
-                  <h3>{articolo.titolo}</h3>
-                  {articolo.immagine && <img src={URL.createObjectURL(articolo.immagine)} alt="Articolo" width="150" />}
-                  <p>{articolo.contenuto}</p>
-                  <p><strong>Categoria:</strong> {articolo.categoria}</p>
-                  <p><strong>Tags:</strong> {articolo.tags.join(', ')}</p>
-                  <p><strong>Pubblicato:</strong> {articolo.pubblicato ? 'Sì' : 'No'}</p>
-                </li>
-              ))}
-            </ul>
-          </div> */}
-          {/*  <section className='posts'>
-              <div className="container">
-                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-                  {
-                    postsData.data ?
-                      postsData.data.map((post, index) => (
-                        <div className="col" key={post.id || index}>
-                          <div className="card">
-                            <h3>
-                              {post.title}
-                            </h3>
-                            <img src={'http://localhost:3001/' + post.image} alt={post.title} />
-                          </div>
-                          {post.content}
-                        </div>
-                      )) :
-                      <p>No data found</p>
-                  }
-                </div>
-              </div>
-            </section> */}
-        </div >
-
       </BrowserRouter >
     </>
   )

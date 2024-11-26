@@ -4,8 +4,7 @@ import MainMenu from "../components/MainMenu";
 export default function DefaultLayout() {
     return (
         <>
-
-            <header className=" py-4">
+            <header className="py-4">
                 <MainMenu />
             </header>
             <main>
@@ -14,7 +13,6 @@ export default function DefaultLayout() {
             <footer>
                 <p>copyright 2024</p>
             </footer>
-
         </>
     )
 }
